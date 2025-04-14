@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com dom</title>
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com dom</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <div id="perna">ja me recuperei da perna</div>
+    <div class="manteiga">amanha vou fazer coisas legais no trabalho</div>
+    <div id="msg"><a href="https://ge.globo.com/ba/futebol/brasileirao-serie-a/jogo/13-04-2025/bahia-mirassol.ghtml">clique em mim</a></div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'red'
+        corpo.style.background = 'black'
+        window.document.write('o conteudo do pragrafo e: ' + p1.innerHTML)
+        
+        
+        //d.innerText = 'estou aguardando..'
+        //d.innerText = 'OLA!'
+        var f = window.document.querySelector('div#msg')
+        f.style.color = 'blue'
+        var a = window.document.getElementsByClassName('manteiga')[0]
+        a.style.background = 'yellow'
+        var b = window.document.querySelector('div#perna')
+        b.style.background = 'orange'
+    </script>
+</body>
+</html>
