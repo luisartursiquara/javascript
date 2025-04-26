@@ -35,6 +35,9 @@ footer{
 select#flista {
     width: 250px;
 }
+div#res {
+    font-size: 0.5em;
+}
 /*section > div#numero > img{
     width: 400px;
     height: 350px;
