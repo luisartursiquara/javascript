@@ -12,14 +12,14 @@ header{
         text-shadow: 0px 0px 10px black;
 }
 section{
-        margin: auto;
         background: rgb(255, 255, 255);
-        text-align: center;
-        width: 500px;
         border-radius: 10px;
         padding: 15px;
-        height: 400px;
+        width: 500px;
+        margin: auto;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+        text-align: center;
+        height: 400px;
         position: relative;
 }
 section > div#texto {
@@ -32,14 +32,18 @@ footer{
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.521);
     padding-top: 20px;
 }
-section > div#foto > img{
+select#flista {
+    width: 250px;
+}
+/*section > div#numero > img{
     width: 400px;
     height: 350px;
     border-radius: 50%;
 }
-div#foto{
+div#numero{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-200px, -155px);
-}
+    width: 400px;
+}*/
